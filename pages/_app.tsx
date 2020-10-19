@@ -1,6 +1,8 @@
+import { AppContext, AppInitialProps } from 'next/app'
+
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }: AppContext & AppInitialProps) => {
   return <Component {...pageProps} />
 }
 
